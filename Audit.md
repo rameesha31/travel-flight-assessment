@@ -225,4 +225,4 @@ The most significant performance concerns observed in this audit were high Total
 
 The accessibility audit was generally strong, with the main observed issue being insufficient color contrast on a failing element.
 
-![Total Performance](audit-image-evidence/totalperformance.png)
+![Total Performance](audit-image-evidence/totalperformance.jpeg)
