@@ -41,7 +41,7 @@ Lighthouse reported a **Total Blocking Time of 2,400 ms**.
 
 This indicates that the browser's main thread is blocked for a significant amount of time while the page is loading.
 
-![Lighthouse Total Blocking Time evidence](audit-evidence/evidence1.png)
+![Lighthouse Total Blocking Time evidence](audit-image-evidence/evidence1.png)
 
 ### Who it hurts
 
@@ -73,7 +73,7 @@ The report showed time being spent on areas including:
 
 Script evaluation alone accounted for approximately **4,181 ms**.
 
-![Heavy Main-Thread Work](audit-evidence/evidence2.png)
+![Heavy Main-Thread Work](audit-image-evidence/evidence2.png)
 
 ### Who it hurts
 
@@ -97,7 +97,7 @@ Lighthouse reported approximately **4.2 seconds of JavaScript execution time**.
 
 The report also showed significant CPU time being spent on first-party Travel.pk JavaScript resources.
 
-![JavaScript Execution Time](audit-evidence/evidence3.png)
+![JavaScript Execution Time](audit-image-evidence/evidence3.png)
 
 ### Who it hurts
 
@@ -128,7 +128,7 @@ Estimated savings: 75.2 KiB
 
 for the highlighted first-party resources.
 
-![Unused JavaScript](audit-evidence/evidence4.png)
+![Unused JavaScript](audit-image-evidence/evidence4.png)
 
 ### Who it hurts
 
@@ -154,7 +154,7 @@ The Lighthouse accessibility audit reported:
 
 A failing element was shown in the audit report.
 
-![Insufficient Color Contrast](audit-evidence/evidence5.png)
+![Insufficient Color Contrast](audit-image-evidence/evidence5.png)
 
 ### Who it hurts
 
@@ -182,7 +182,7 @@ The audit identified a failing link element in the page navigation/breadcrumb ar
 
 This means links that appear identical or have the same accessible description may not consistently represent the same destination or purpose.
 
-![Identical Links Have Different Purposes](audit-evidence/evidence6.png)
+![Identical Links Have Different Purposes](audit-image-evidence/evidence6.png)
 
 ### Who it hurts
 
@@ -213,7 +213,7 @@ The page received an **Accessibility score of 96**, and several accessibility au
 
 The page also achieved a **Cumulative Layout Shift score of 0**, indicating good visual stability during the tested page load.
 
-![Passed Audits](audit-evidence/passedaudits.png)
+![Passed Audits](audit-image-evidence/passedaudits.png)
 
 ---
 
@@ -225,4 +225,4 @@ The most significant performance concerns observed in this audit were high Total
 
 The accessibility audit was generally strong, with the main observed issue being insufficient color contrast on a failing element.
 
-![Total Performance](audit-evidence/totalperformance.png)
+![Total Performance](audit-image-evidence/totalperformance.png)
