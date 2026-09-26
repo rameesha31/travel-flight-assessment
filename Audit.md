@@ -18,7 +18,7 @@ The audit was performed on the public Travel.pk page. The live website was only 
 
 | Category | Score |
 |---|---:|
-| Performance | 63 |
+| Performance | 56 |
 | Accessibility | 96 |
 
 Selected performance metrics:
@@ -40,6 +40,8 @@ Selected performance metrics:
 Lighthouse reported a **Total Blocking Time of 2,400 ms**.
 
 This indicates that the browser's main thread is blocked for a significant amount of time while the page is loading.
+
+![Lighthouse Total Blocking Time evidence](audit-evidence/evidence1.png)
 
 ### Who it hurts
 
@@ -71,6 +73,8 @@ The report showed time being spent on areas including:
 
 Script evaluation alone accounted for approximately **4,181 ms**.
 
+![Heavy Main-Thread Work](audit-evidence/evidence2.png)
+
 ### Who it hurts
 
 Users on slower devices are likely to experience delayed page interaction and slower overall responsiveness.
@@ -92,6 +96,8 @@ Reduce the amount of JavaScript executed during initial page load and defer non-
 Lighthouse reported approximately **4.2 seconds of JavaScript execution time**.
 
 The report also showed significant CPU time being spent on first-party Travel.pk JavaScript resources.
+
+![JavaScript Execution Time](audit-evidence/evidence3.png)
 
 ### Who it hurts
 
@@ -122,6 +128,8 @@ Estimated savings: 75.2 KiB
 
 for the highlighted first-party resources.
 
+![Unused JavaScript](audit-evidence/evidence4.png)
+
 ### Who it hurts
 
 Users on slower or limited network connections download JavaScript that is not needed for the initial experience, increasing data usage and potentially slowing page loading.
@@ -145,6 +153,8 @@ The Lighthouse accessibility audit reported:
 > Background and foreground colors do not have a sufficient contrast ratio.
 
 A failing element was shown in the audit report.
+
+![Insufficient Color Contrast](audit-evidence/evidence5.png)
 
 ### Who it hurts
 
@@ -171,6 +181,8 @@ Lighthouse reported:
 The audit identified a failing link element in the page navigation/breadcrumb area.
 
 This means links that appear identical or have the same accessible description may not consistently represent the same destination or purpose.
+
+![Identical Links Have Different Purposes](audit-evidence/evidence6.png)
 
 ### Who it hurts
 
@@ -201,6 +213,8 @@ The page received an **Accessibility score of 96**, and several accessibility au
 
 The page also achieved a **Cumulative Layout Shift score of 0**, indicating good visual stability during the tested page load.
 
+![Passed Audits](audit-evidence/passedaudits.png)
+
 ---
 
 ## Conclusion
@@ -210,3 +224,5 @@ The public Travel.pk Karachi-to-Dubai page performed strongly in the Lighthouse 
 The most significant performance concerns observed in this audit were high Total Blocking Time, heavy main-thread work, and JavaScript execution cost. Reducing unnecessary JavaScript and deferring non-critical work would likely improve responsiveness, particularly for users on slower mobile devices.
 
 The accessibility audit was generally strong, with the main observed issue being insufficient color contrast on a failing element.
+
+![Total Performance](audit-evidence/totalperformance.png)
